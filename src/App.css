@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+
+.navsection {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orangered;
+  color: white;
+  padding: 0 20px;
+}
+
+
+.slidebar {
+  height: calc(100vh - 90px);
+  padding-top: 10px;
+  width: 100%;
+  max-width: 15%;
+  background-color: #f0f0f0;
+}
+
+.slidebar li {
+  list-style: none;
+  padding: 20px;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.slidebar li:hover {
+  background-color: #e0e0e0;
+}
+
+.collection {
+  display: flex;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  height: calc(100vh - 150px);
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.pt {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+}
+
+.table-scroll {
+  max-height: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* Fix table header on scroll */
+.pt thead {
+  position: sticky;
+  top: 0;
+  background-color: orangered;
+  color: white;
+  z-index: 2;
+}
+
+.pt tr{
+  height:120px;
+}
+
+/* Basic styling for table */
+.pt th, .pt td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.pt th {
+  background-color: orangered;
+  color: white;
+}
+
+.pt img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.pt tr:hover {
+  background-color: #f2f2f2;
+}
+
+
+.card-wrapper {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background-color: #f8f8f8;
+  border: 2px solid #d0d0d0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wrapper1{
+  position: relative;
+  width: 550px;
+  height: 600px;
+  background-color: #f8f8f8;
+  border: 2px solid #d0d0d0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  padding: 40px;
+}
+
+.card h2 {
+  color: black333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 30px 0;
+}
+
+.input-group input {
+  width: 100%;
+  height: 100%;
+  padding: 0 50px 0 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: black;
+}
+
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: black;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.input-icon1{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: black;
+  pointer-events: auto;
+}
+
+
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-actions button {
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+  font-weight: 500;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.form-actions button:hover {
+  background-color: #dcdcdc;
+  color: black;
+  transform: scale(1.05);
+}
+
+.form-actions a,.register-link p a{
+  color: black;
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+.form-actions a:hover {
+  text-decoration: underline;
+}
+
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.alert {
+  display: flex;
+  flex-direction: row;
+}
+.button{
+  cursor: pointer;
+}
